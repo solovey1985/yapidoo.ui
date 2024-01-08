@@ -22,7 +22,9 @@ form {
   border-radius: 12px; //var
 }
 
-input {
+input[type="text"],
+input[type="password"] textarea,
+select {
   color: $color-dark-grey-40;
   padding: 12px 15px 12px 15px; //var spacing
   font-size: 15px;
@@ -63,6 +65,107 @@ input {
   }
 }
 
-$form-select-border-width: 1px !important;
-$form-select-border-color: red !important;
-$form-select-bg:  green !important;
+// *** Checkbox and radio button base styles
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label.checkbox {
+  // Basic styling for label
+  position: relative;
+  padding-left: map-get($map: $spacings, $key: 6);
+  cursor: pointer;
+
+  &::before {
+    // This creates a custom checkbox appearance
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: map-get($map: $border-sizes, $key: "md") solid $color-primary;
+    border-radius: map-get($map: $radiuses, $key: "sm");
+    background-color: $color-bg;
+  }
+
+  &::after {
+    // This styles the checkmark
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $color-primary;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+
+input[type="checkbox"]:checked + label::after {
+  // Make the checkmark visible when the checkbox is checked
+  opacity: 1;
+}
+
+// *** Radio button base styles
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label.radio-button {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: map-get($map: $border-sizes, $key: "md") solid $color-primary;
+    border-radius: 50%;
+    background-color: $color-bg;
+    transition: border-color 0.3s ease;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $color-dark-grey-40;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  input[type="radio"]:checked + span::after {
+    opacity: 1;
+  }
+  
+  input[type="radio"]:focus + span::before {
+    box-shadow: 0 0 3px 2px red;
+  }
+  
+  label:hover::before {
+    border-color: $color-dark-grey;
+  }
+}
+input.has-danger{
+  border: 1px solid red;
+}
+
+form{
+  z-index: 1000;
+}

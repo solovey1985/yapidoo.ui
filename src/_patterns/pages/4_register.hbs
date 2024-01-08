@@ -1,0 +1,105 @@
+<div class="page justify-content-center container-fluid d-flex flex-column">
+    <div class="row flex-grow-1 primary-page-background">
+        <div class="d-flex flex-column pt-10 img-background-stars">
+            <img class="mx-auto" alt="White Logo" src="/assets/images/logo/logo-white.png" style="z-index: 99" />
+        </div>
+        <div class="row flex-grow-1">
+            <div class="d-flex flex-column col-sm-10 col-md-8 col-lg-6 mx-auto">
+                <form [formGroup]="form" [autocomplete]="'off'" class="auth-form d-flex flex-column px-5 py-3">
+                    <div class="form-group" [ngClass]="{ 'has-danger': isInvalid(form.get('firstName')?.value) }">
+                        <label i18n for="firstName">Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            [ngClass]="{ 'has-danger': isInvalid(form.get('firstName')?.value) }"
+                            i18n-placeholder
+                            placeholder="Enter your name"
+                            formControlName="firstName"
+                        />
+                        <app-error title="Name" [control]="form.get('firstName')"></app-error>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'has-danger': isInvalid(form.get('email')?.value) }">
+                        <label i18n for="email">Email</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            i18n-placeholder
+                            placeholder="Enter your email"
+                            formControlName="email"
+                            [ngClass]="{
+                                'form-control-danger': isInvalid(form.get('email')?.value)
+                            }"
+                        />
+                        <app-error title="email" [control]="form.get('email')"></app-error>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'has-danger': isInvalid(form.get('city')?.value) }">
+                        <label i18n for="city">Select City</label>
+                        
+                    </div>
+                    <div formGroupName="matchingPasswordsGroup">
+                        <div
+                            class="form-group"
+                            [ngClass]="{
+                                'has-danger': isInvalid(form.get('matchingPasswordsGroup')?.get('password'))
+                            }"
+                        >
+                            <label i18n for="password">Password</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                i18n-placeholder
+                                placeholder="Enter your password"
+                                formControlName="password"
+                            />
+                            <app-error
+                                title="Password"
+                                [control]="form.get('matchingPasswordsGroup')?.get('password')"
+                            ></app-error>
+                        </div>
+                        <div class="form-group">
+                            <label i18n for="confirmPassword">Repeat password</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                i18n-placeholder
+                                placeholder="Reapeat your password"
+                                formControlName="confirmPassword"
+                            />
+                            <app-error
+                                title="Repeat password"
+                                [control]="form.get('matchingPasswordsGroup')?.get('confirmPassword')"
+                            ></app-error>
+                            <app-error
+                                [control]="form.get('matchingPasswordsGroup')"></app-error>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" formControlName="acceptAgreement" />
+                            <span class="form-check-sign"></span>
+                            <span class="text-center">
+                                Прийняти
+                                <a [routerLink]="['/use-terms']" routerLinkActive="router-link-active">Usage Terms</a>
+                                та
+                                <a [routerLink]="['/privacy-policy']" routerLinkActive="router-link-active"
+                                    >Privary Policy</a
+                                >
+                            </span>
+                        </label>
+                        <app-error i18n title="Agreement" [control]="form.get('acceptAgreement')"></app-error>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit" (click)="formSubmit()" [disabled]="form.invalid">
+                        <span i18n>Sign Up</span>
+                    </button>
+                </form>
+            </div>
+            <div class="row justify-content-between align-content-start pb-5 flex-grow-1 d-flex flex-column">
+                <h5 class="text-center font-weight-bolder">Я вже зареєстрований</h5>
+                <a class="btn btn-text btn-dark btn-md" routerLink="/auth/login" routerLinkActive="router-link-active" i18n
+                    >Login</a
+                >
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 
 $spacings: (
+  0: 0px,
   1: 4px,
   2: 8px,
   3: 12px,
@@ -27,4 +28,11 @@ $font-sizes: (
   "sm": 15px,
   "md": 22px,
   "l": 28px,
+);
+
+// borders
+$border-sizes: (
+  "sm": 1px,
+  "md": 2px,
+  "l": 4px,
 );
