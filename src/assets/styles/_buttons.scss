@@ -1,0 +1,115 @@
+@mixin gradient-bg($color1, $color2, $angle: 232deg, $start: 31.4%, $end: 122.19%) {
+  background: linear-gradient($angle, $color1 $start, $color2 $end);
+}
+
+.btn {
+  color: red;
+  font-family: "JostBold", sans-serif;
+  font-size: 16px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  border-radius: 20px;
+  min-width: 120px;
+  height: 40px;
+  border: none;
+  margin-right: auto !important;
+  margin-left: auto !important;
+
+  &.btn-lg {
+    margin: auto;
+    width: 100%;
+  }
+
+  &.btn-md {
+    width: 296px;
+  }
+
+  &.btn-sm {
+    font-size: 11px;
+    width: 98px;
+    height: 28px;
+  }
+
+  &-primary {
+    padding: 10px 20px;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    @include gradient-bg($color-primary, $color-secondary);
+
+    // Hover state
+    &:hover {
+      background: $gradient-primary-hover;
+      opacity: 0.9;
+    }
+
+    // Active/Pressed state
+    &:active {
+      background: $gradient-primary-pressed;
+    }
+
+    // Disabled state
+    &:disabled {
+      background: $color-dark-grey-20;
+      color: $color-dark-grey-70;
+      cursor: not-allowed;
+    }
+  }
+
+  &-default {
+    color: $color-primary !important;
+    background: $color-bg;
+
+    &:hover {
+      background: $gradient-default-hover;
+    }
+
+    &:active {
+      background: $gradient-default-pressed;
+    }
+  }
+
+  &-text {
+    background: none !important;
+    color: $color-primary !important;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      background-color: $color-bg-text-hover !important;
+    }
+
+    &:active {
+      color: $color-primary;
+      background-color: $color-bg-text-pressed !important;
+    }
+
+    &:disabled {
+      border: none;
+      color: $color-dark-grey-40 !important;
+    }
+
+    &.btn-light {
+      color: $color-white !important;
+    }
+
+    &.btn-dark {
+      color: $color-dark-grey !important;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn-primary {
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .btn-primary {
+    max-width: 180px;
+  }
+}

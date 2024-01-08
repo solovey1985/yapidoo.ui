@@ -1,0 +1,64 @@
+//@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap');
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JostBold';
+  src: url('../fonts/Jost-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// text colors
+$secondary-text-color: white;
+$secondary-text-on-secondary-color: white;
+$text-color-on-inverted: white;
+$text-color-on-primary: white;
+$disabled-text-color: white;
+$placeholder-color: $color-dark-grey-40;
+$link-color: $color-black;
+
+body,a,label,p,h1,h2,h3,h4,h5,h6 {
+  font-family: "Jost", sans-serif;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-size: map-get($font-sizes, "l");
+  font-weight: 600;
+}
+
+h2 {
+  font-size: map-get($font-sizes, "md");
+}
+
+h3 {
+  font-size: map-get($font-sizes, "sm");
+}
+
+h4 {
+
+  font-size: map-get($font-sizes , "xsm");
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: map-get($font-sizes, "xsm");
+}
+
+.text-primary{
+  color: $color-primary;
+}

@@ -1,0 +1,39 @@
+// colors.scss
+
+$color-primary: #ff8219;
+$color-secondary: #ffe81e;
+$color-black: #000000;
+$color-dark-grey: #333333;
+$color-bg: #f5f6f8;
+$color-red: #d81b1b;
+$color-dark-grey-40: #adadad;
+$color-dark-grey-70: #707070;
+$color-blue-bg: #c0f6fd;
+$color-dark-grey-20: #d6d6d6;
+$color-dark-grey-10: #ebebeb;
+$color-white: #ffffff;
+$color-bg-text-hover: rgba(255, 130, 25, 0.2);
+$color-bg-text-pressed: rgba(255, 130, 25, 0.4);
+
+// Gradients
+$dark-background: $color-dark-grey;
+$dark-gradient: linear-gradient(180deg, #e5e5e5 -418.4%, #26282e 100%);
+$color-radial-gradient: radial-gradient(#ffffff 20.96%, #e8e4e4 79.75%, #e8e4e4 91.78%);
+$color-orange-gradient: linear-gradient(to bottom, $color-primary 0%, $color-secondary 100%);
+$gradient-primary-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(232deg, $color-primary 31.4%, $color-secondary 122.19%);
+$gradient-primary-pressed: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    linear-gradient(232deg, $color-primary 31.4%, $color-secondary 122.19%);
+
+$gradient-default-hover: linear-gradient(0deg, rgba(255, 130, 25, 0.2) 0%, rgba(255, 130, 25, 0.2) 100%), $color-bg;
+$gradient-default-pressed: linear-gradient(0deg, rgba(255, 130, 25, 0.4) 0%, rgba(255, 130, 25, 0.4) 100%), $color-bg;
+
+@mixin effect-style-shadow-on-a-card() {
+    box-shadow: 2px 8px 10px -4px #000000;
+}
+@mixin effect-style-shadow-on-a-filter() {
+    box-shadow: 0px 4px 4px #000000;
+}
+@mixin effect-style-shadow-on-a-text-field() {
+    box-shadow: 0px 2px 10px -2px #000000;
+}

@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "name": "$color-white",
+      "value": "#fff",
+      "comment": "Page backgrounds, etc."
+    },
+    {
+      "name": "$color-dark-grey-10",
+      "value": "#ebebeb",
+      "comment": ""
+    },
+    {
+      "name": "$color-dark-grey-20",
+      "value": "#d6d6d6",
+      "comment": ""
+    },
+    {
+      "name": "$color-dark-grey-40",
+      "value": "#adadad",
+      "comment": ""
+    },
+    {
+      "name": "$color-dark-grey-70",
+      "value": "#707070",
+      "comment": ""
+    },
+    {
+      "name": "$color-dark-grey",
+      "value": "#333333",
+      "comment": ""
+    },
+    {
+      "name": "$color-black",
+      "value": "#000000",
+      "comment": "Font Color"
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-neutral-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "name": "$color-red",
+      "value": "#d81b1b",
+      "comment": "Errors, warnings, etc."
+    },
+    {
+      "name": "$color-bg-text-hover",
+      "value": "rgba(255, 130, 25, 0.2)",
+      "comment": "Buttons, links hover state, etc."
+    },
+    {
+      "name": "$color-bg-text-pressed",
+      "value": "rgba(255, 130, 25, 0.4)",
+      "comment": "Buttons, links pressed state, etc."
+    }
+    
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-utility-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

@@ -1,0 +1,16 @@
+html,body {
+    height: 100vh;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.dark-background {
+    background: $dark-gradient;
+}
+
+.primary-page-background{
+    background: var(--Orange-gradient-1, linear-gradient(232deg, #FF8219 31.4%, #FFE81E 122.19%));
+}

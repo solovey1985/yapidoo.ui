@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "$dark-gradient",
+      "value": "linear-gradient(180deg, #e5e5e5 -418.4%, #26282e 100%);",
+      "comment": "Errors, warnings, etc."
+    },
+    {
+      "name": "$color-radial-gradient",
+      "value": "radial-gradient(#ffffff 20.96%, #e8e4e4 79.75%, #e8e4e4 91.78%);",
+      "comment": "Buttons, links etc."
+    },
+    {
+      "name": "$color-orange-gradient",
+      "value": "linear-gradient(to bottom, #ff8219 0%, #ffe81e 100%);",
+      "comment": "Buttons, links pressed state, etc."
+    },
+    {
+      "name": "$gradient-primary-hover",
+      "value": "linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(232deg, #ff8219 31.4%, #ffe81e 122.19%);",
+      "comment": "Buttons, links hover state, etc."
+    },
+    {
+        "name": "$gradient-default-hover",
+        "value": "linear-gradient(0deg, rgba(255, 130, 25, 0.2) 0%, rgba(255, 130, 25, 0.2) 100%), #f5f6f8;",
+        "comment": "Buttons, links hover state, etc."
+      },
+      {
+        "name": "$gradient-default-pressed",
+        "value": "linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(232deg, #ff8219 31.4%, #ffe81e 122.19%);",
+        "comment": "Buttons, links hover state, etc."
+      }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-utility-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

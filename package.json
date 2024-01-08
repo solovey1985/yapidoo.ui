@@ -1,0 +1,45 @@
+{
+  "name": "yapidoo.ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pl:build": "patternlab build --config ./patternlab-config.json",
+    "pl:help": "patternlab --help",
+    "pl:install": "patternlab install --config ./patternlab-config.json",
+    "pl:serve": "patternlab serve --config ./patternlab-config.json",
+    "pl:version": "patternlab --version",
+    "start": "npm run pl:serve",
+    "watch:scss": "webpack --watch", 
+    "watch:pl": "patternlab serve",
+    "watch:all": "npm-run-all --parallel watch:scss watch:pl",
+    "build-scss": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pattern-lab/cli": "^6.1.0",
+    "@pattern-lab/core": "^6.1.0",
+    "@pattern-lab/engine-handlebars": "^6.1.0",
+    "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.3",
+    "@pattern-lab/uikit-workshop": "^6.1.0",
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "mini-css": "^1.0.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-fix-style-only-entries": "^0.6.1"
+  }
+}

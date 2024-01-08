@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "name": "$color-primary",
+      "value": "#ff8219",
+      "comment": ""
+    },
+    {
+      "name": "$color-secondary",
+      "value": "#ffe81e",
+      "comment": "Color is used for building of gradient."
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-brand-</code> in <code>./src/assets/styles/_colors.scss</code>"
+  }
+}

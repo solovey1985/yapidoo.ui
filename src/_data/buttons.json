@@ -1,0 +1,7 @@
+{
+    "buttons": [
+      {"type": "primary", "sizes": ["lg", "md", "sm"]},
+      {"type": "default", "sizes": ["lg", "md", "sm"]},
+      {"type": "text", "sizes": ["lg", "md", "sm"]}
+    ]
+  }
