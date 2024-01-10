@@ -1,8 +1,6 @@
-<label class="radio-button">
-  <input type="radio" name="myRadio" value="Option1">
-  <span>Option 1</span>
-</label>
-<label class="radio-button">
-  <input type="radio" name="myRadio" value="Option2">
-  <span>Option 2</span>
-</label>
+{{#options}}
+  <label class="">
+    <input type="radio" name="{{../name}}" value="Option1" />
+    <span>{{label}}</span>
+  </label>
+{{/options}}

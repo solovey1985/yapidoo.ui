@@ -34,7 +34,12 @@
                     </div>
                     <div class="form-group" [ngClass]="{ 'has-danger': isInvalid(form.get('city')?.value) }">
                         <label i18n for="city">Select City</label>
+                        <select class="form-select " id="" placeholder="Placeholder"  >
+                            <option value="option-1">Option 1</option>
+                            <option value="option-2">Option 2</option>
                         
+                        
+                        </select>
                     </div>
                     <div formGroupName="matchingPasswordsGroup">
                         <div

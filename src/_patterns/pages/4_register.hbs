@@ -34,7 +34,7 @@
                     </div>
                     <div class="form-group" [ngClass]="{ 'has-danger': isInvalid(form.get('city')?.value) }">
                         <label i18n for="city">Select City</label>
-                        
+                        {{> atoms-select }}
                     </div>
                     <div formGroupName="matchingPasswordsGroup">
                         <div

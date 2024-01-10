@@ -1,8 +1,0 @@
-{
-    "buttons": [
-      {"type": "primary", "size": "lg", "text": "Primary"},
-      {"type": "default", "size": "md", "text": "Default"},
-      {"type": "text", "size": "sm", "text": "Secondary"}
-    ]
-  }
-  

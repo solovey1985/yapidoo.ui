@@ -1,0 +1,7 @@
+{
+    "type":"text",
+    "class": "",
+    "id": "firstName",
+    "placeholder": "Enter your name",
+    "name": "firstName"
+}

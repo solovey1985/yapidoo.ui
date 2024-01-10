@@ -1,0 +1,28 @@
+{
+    "styleModifier": "custom-select-style",
+    "id": "mySelect",
+    "placeholder": "Choose an option",
+    "multiple": false,
+    "disabled": false,
+    "selectOptions": [
+        { "value": "option1", "option": "Option 1" },
+        { "value": "option2", "option": "Option 2" },
+        { "value": "option3", "option": "Option 3" }
+    ],
+    "optionGroups": [
+        {
+            "optGroupLabel": "Group 1",
+            "selectOptions": [
+                { "value": "group1-option1", "option": "Group 1 Option 1" },
+                { "value": "group1-option2", "option": "Group 1 Option 2" }
+            ]
+        },
+        {
+            "optGroupLabel": "Group 2",
+            "selectOptions": [
+                { "value": "group2-option1", "option": "Group 2 Option 1" },
+                { "value": "group2-option2", "option": "Group 2 Option 2" }
+            ]
+        }
+    ]
+}
