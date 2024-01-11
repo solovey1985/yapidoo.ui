@@ -1,7 +1,5 @@
 {
-    "checkbox": {
-        "id": "myCheckbox",
-        "label": "Checkbox",
-        "checked": true
-    }
+  "id": "myCheckbox",
+  "label": "Checkbox",
+  "checked": true
 }
