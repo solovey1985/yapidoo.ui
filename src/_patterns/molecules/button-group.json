@@ -1,0 +1,12 @@
+{
+    "buttons": [
+        {
+            "text": "Button",
+            "classes": "btn-primary"
+        },
+        {
+            "text": "Button",
+            "classes": "btn-default"
+        }
+    ]
+}

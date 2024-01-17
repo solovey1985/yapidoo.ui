@@ -1,9 +1,14 @@
-@mixin gradient-bg($color1, $color2, $angle: 232deg, $start: 31.4%, $end: 122.19%) {
+@mixin gradient-bg(
+  $color1,
+  $color2,
+  $angle: 232deg,
+  $start: 31.4%,
+  $end: 122.19%
+) {
   background: linear-gradient($angle, $color1 $start, $color2 $end);
 }
 
 .btn {
-  color: red;
   font-family: "JostBold", sans-serif;
   font-size: 16px;
   text-decoration: none !important;
@@ -14,7 +19,7 @@
   border: none;
   margin-right: auto !important;
   margin-left: auto !important;
-
+  border: none !important;
   &.btn-lg {
     margin: auto;
     width: 100%;
@@ -70,13 +75,16 @@
     }
   }
 
-  &-text {
+  &.btn-text {
     background: none !important;
     color: $color-primary !important;
     font-size: 16px;
     cursor: pointer;
     padding: 10px 20px;
-    transition: color 0.3s ease;
+    transition: color 0.9s ease;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       background-color: $color-bg-text-hover !important;
@@ -93,7 +101,7 @@
     }
 
     &.btn-light {
-      color: $color-white !important;
+      color: $color-dark-grey-70 !important;
     }
 
     &.btn-dark {

@@ -11,8 +11,7 @@ module.exports = {
   },
   plugins: [
     new FixStyleOnlyEntriesPlugin(),
-    new MiniCssExtractPlugin({filename: "css/[name].css", chunkFilename: "[id].css"}),
-    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({filename: "css/[name].css", chunkFilename: "[id].css"})
   ],
   module: {
     rules: [
