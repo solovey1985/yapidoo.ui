@@ -1,0 +1,13 @@
+{
+    "icons": [
+        {
+            "icon": "fab fa-facebook"
+        },
+        {
+            "icon": "fa fa-home"
+        },
+        {
+            "icon": "fa fa-user fa-2x"
+        }
+    ]
+}

@@ -59,10 +59,6 @@ select {
     text-transform: uppercase;
     @include spacing(margin-bottom, 2);
   }
-  .error {
-    color: $color-red;
-    font-size: 13px; // var
-  }
 }
 
 // *** Checkbox and radio button base styles
@@ -124,7 +120,7 @@ label.radio-button {
   padding-left: 30px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
@@ -138,7 +134,7 @@ label.radio-button {
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 10px;
     height: 10px;
@@ -153,19 +149,23 @@ label.radio-button {
   input[type="radio"]:checked + span::after {
     opacity: 1;
   }
-  
+
   input[type="radio"]:focus + span::before {
     box-shadow: 0 0 3px 2px red;
   }
-  
+
   label:hover::before {
     border-color: $color-dark-grey;
   }
 }
-input.has-danger{
+input.has-danger {
   border: 1px solid red;
 }
 
-form{
+form {
   z-index: 1000;
+}
+.error {
+  color: $color-red;
+  font-size: 13px; // var
 }
