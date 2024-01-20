@@ -1,0 +1,41 @@
+{
+  "form": {
+    "inputs": [
+      {
+        "label": {
+          "text": "Email"
+        },
+        "input": {
+          "text": true,
+          "placeholder": "Enter your email",
+          "type": "email"
+        }
+      },
+      {
+        "label": {
+          "text": "Password"
+        },
+        "input": {
+          "text": true,
+          "placeholder": "Enter your password",
+          "type": "password"
+        }
+      },
+      {        
+        "label": {
+          "text": "Remember me"
+        },
+        "input": {
+          "checkbox": true,
+          "id": "remember",
+          "type": "checkbox",
+          "label": "Remember me"
+        }
+      }
+    ],
+    "submit": {
+      "text": "Login",
+      "classes": "btn-primary"
+    }
+  }
+}

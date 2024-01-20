@@ -2,5 +2,9 @@
     {{#each inputs}}
         {{>molecules-form-group }}
     {{/each}}
+    {{#with submit}}
+    <div class="mx-auto">
+        {{>atoms-button text=text classes=classes }}
+        {{/with}}
+    </div>
 </form>
-

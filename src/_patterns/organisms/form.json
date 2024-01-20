@@ -55,5 +55,10 @@
             "checked": false
         }
       }
-  ]
+  ],
+  "submit": {
+    "text": "Submit",
+    "classes": "btn-primary"
+  }
+
 }

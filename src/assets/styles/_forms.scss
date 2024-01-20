@@ -1,4 +1,9 @@
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
   label {
     font-size: 13px;
     font-style: normal;
@@ -18,8 +23,8 @@ form {
   border-radius: 12px; //var
 }
 
-input[type="text"],
-input[type="password"] textarea,
+input,
+textarea,
 select {
   color: $color-dark-grey-40;
   padding: 12px 15px 12px 15px; //var spacing
@@ -52,7 +57,7 @@ select {
 .form-group {
   display: flex;
   flex-direction: column;
-  @include spacing(margin-bottom, 2);
+  @include spacing(margin-bottom, 4);
   label {
     font-family: "JostBold";
     font-size: 13px;

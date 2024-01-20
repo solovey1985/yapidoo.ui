@@ -1,0 +1,65 @@
+{
+  "form": {
+    "inputs": [
+      {
+        "label": {
+          "text": "First Name"
+        },
+        "input": {
+          "text": true,
+          "type": "text",
+          "placeholder": "Enter your name"
+        }
+      },
+      {
+        "label": {
+          "text": "Email"
+        },
+        "input": {
+          "text": true,
+          "type": "email",
+          "placeholder": "Enter your email"
+        }
+      },
+      {
+        "label": {
+          "text": "Select city"
+        },
+        "input": {
+          "select": true,
+          "type": "select",
+          "placeholder": "Select city",
+          "selectOptions": [
+            { "value": "option1", "option": "Kyiv, UA" },
+            { "value": "option2", "option": "Chernihiv, UA" },
+            { "value": "option3", "option": "Mykolaiv, UA" }
+          ]
+        }
+      },
+      {
+        "label":{
+            "text":"Password"
+        },
+        "input":{
+            "text":true,
+            "type":"password",
+            "placeholder": "Enter your password"
+        }
+      },
+      {
+        "label":{
+            "text":"Repeat Password"
+        },
+        "input":{
+            "text":true,
+            "type":"password",
+            "placeholder": "Repeat your password"
+        }
+      }
+    ],
+    "submit": {
+      "text": "Sign up",
+      "classes": "btn-primary"
+    }
+  }
+}
