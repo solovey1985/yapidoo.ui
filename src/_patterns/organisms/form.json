@@ -17,48 +17,48 @@
       }
     },
     {
-        "label": {
-          "text": "Email"
-        },
-        "input": {
-          "text": true,
-          "type": "text",
-          "class": "",
-          "id": "email",
-          "placeholder": "Enter your email",
-          "name": "email"
-        }
+      "label": {
+        "text": "Email"
       },
-      {
-        "label":{
-          "text": "Location"
-        },
-        "input": {
-            "select": true,
-            "styleModifier": "custom-select-style",
-            "id": "mySelect",
-            "placeholder": "Choose an option",
-            "multiple": false,
-            "disabled": false,
-            "selectOptions": [
-                { "value": "option1", "option": "Kyiv, Ukraine" },
-                { "value": "option2", "option": "Dubai, UAE" },
-                { "value": "option3", "option": "London, UK" }
-            ]
-        }
-      },
-      {
-        "input": {
-            "checkbox": true,
-            "id": "acceptTerms",
-            "label": "Accept Terms and Conditions",
-            "checked": false
-        }
+      "input": {
+        "text": true,
+        "type": "text",
+        "class": "",
+        "id": "email",
+        "placeholder": "Enter your email",
+        "name": "email"
       }
+    },
+    {
+      "label": {
+        "text": "Location"
+      },
+      "input": {
+        "select": true,
+        "styleModifier": "custom-select-style",
+        "id": "mySelect",
+        "placeholder": "Choose an option",
+        "multiple": false,
+        "disabled": false,
+        "selectOptions": [
+          { "value": "option1", "option": "Kyiv, Ukraine" },
+          { "value": "option2", "option": "Dubai, UAE" },
+          { "value": "option3", "option": "London, UK" }
+        ]
+      }
+    },
+    {
+      "input": {
+        "checkbox": true,
+        "type": "checkbox",
+        "id": "acceptTerms",
+        "label": "Accept Terms and Conditions",
+        "checked": true
+      }
+    }
   ],
   "submit": {
     "text": "Submit",
     "classes": "btn-primary"
   }
-
 }

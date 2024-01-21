@@ -13,7 +13,7 @@
   font-size: 16px;
   text-decoration: none !important;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 20px !important;
   min-width: 120px;
   height: 40px;
   border: none;
@@ -80,6 +80,7 @@
     background: none !important;
     color: $color-primary !important;
     font-size: 16px;
+    font-weight: bold !important;
     cursor: pointer;
     padding: 10px 20px;
     transition: color 0.9s ease;

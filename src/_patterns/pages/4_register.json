@@ -55,6 +55,15 @@
             "type":"password",
             "placeholder": "Repeat your password"
         }
+      },
+      {
+       
+        "input": {
+            "checkbox": true,
+            "id": "acceptTerms",
+            "label": "Accept Terms and Conditions",
+            "checked": false
+        }
       }
     ],
     "submit": {

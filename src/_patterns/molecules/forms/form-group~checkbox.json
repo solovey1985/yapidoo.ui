@@ -1,9 +1,7 @@
 {
-    "label":{
-      "text":"Form Group" 
-    },
   "input": {
     "checkbox": true,
+    "type": "checkbox",
     "id": "acceptTerms",
     "label": "Accept Terms and Conditions",
     "checked": true

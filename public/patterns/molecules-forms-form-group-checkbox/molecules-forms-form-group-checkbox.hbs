@@ -1,7 +1,9 @@
 <div class="form-group">
-    {{#with label}}
-        {{>atoms-label}}
-    {{/with}}
+    {{#unless input.checkbox}}
+        {{#with label}}
+            {{>atoms-label}}
+        {{/with}}
+    {{/unless}}
     {{#with input}}
         {{#if text}}
             {{>atoms-text-input}}
@@ -12,8 +14,8 @@
         {{#if checkbox}}
             {{>atoms-checkbox}}
         {{/if}}
-    {{/with}}
-    {{#with error}}
-        {{>atoms-error}}
-    {{/with}}
+        {{/with}}
+        {{#with error}}
+            {{>atoms-error}}
+        {{/with}}
 </div>
