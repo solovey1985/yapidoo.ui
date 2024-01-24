@@ -1,12 +1,12 @@
 <div class="form-group">
     {{#unless input.checkbox}}
         {{#with label}}
-            {{>atoms-label}}
+            {{>atoms-label class="form-group__label"}}
         {{/with}}
     {{/unless}}
     {{#with input}}
         {{#if text}}
-            {{>atoms-text-input}}
+            {{>atoms-text-input class=""}}
         {{/if}}
         {{#if select}}
             {{>atoms-select}}

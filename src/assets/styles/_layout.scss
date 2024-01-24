@@ -1,16 +1,67 @@
-html,body {
-    height: 100vh;
+html,
+body {
+  height: 100vh;
 }
 
 .page {
-    width: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-auth {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 1rem;
+
+    &--primary {
+      background: var(
+        --Orange-gradient-1,
+        linear-gradient(232deg, $color-primary 31.4%, $color-secondary 122.19%)
+      );
+      justify-content: flex-start;
+      min-height: 40%;
+    }
+  }
+  
+  &__logo {
+    display: flex;
+    margin-top: 54px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    // It should be here so the gradient is applied to the parent.
+    background-image: url(/assets/images/shared/stars.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100%;
+    img {
+      z-index: 99;
+      max-width: 70%;
+      width: auto;
+      height: auto;
+    }
+  }
+  &__form {
+    padding: 1rem;
+    position: relative;
+    top: -120px;
+
+    z-index: 100;
+    fill: rgba(255, 255, 255, 0.2);
+    box-shadow: 15px 15px 15px 0px rgba(255, 255, 255, 0.3) inset;
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+  }
 }
 
 .dark-background {
-    background: $dark-gradient;
-}
-
-.primary-page-background{
-    background: var(--Orange-gradient-1, linear-gradient(232deg, #FF8219 31.4%, #FFE81E 122.19%));
+  background: $dark-gradient;
 }

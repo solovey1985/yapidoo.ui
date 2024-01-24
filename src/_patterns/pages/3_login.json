@@ -32,12 +32,15 @@
           "id": "remember",
           "type": "checkbox",
           "label": "Remember me"
+        },
+        "error": {
+          "message": "Please check the box to continue."
         }
       }
     ],
     "submit": {
       "text": "Login",
-      "classes": "btn-primary"
+      "classes": "btn-primary btn-md"
     }
   },
   "navigation": {

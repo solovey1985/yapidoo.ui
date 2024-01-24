@@ -1,32 +1,31 @@
-<div class="page justify-content-center container-fluid d-flex flex-column">
-    <div class="row flex-grow-1 primary-page-background">
-        <div class="d-flex flex-column pt-10 img-background-stars">
-            <img class="mx-auto" alt="White Logo" src="/assets/images/logo/logo-white.png" style="z-index: 99" />
+<div class="page page-auth">
+    <div class="page-auth__section page-auth__section--primary">
+        <div class="page-auth__logo">
+            <img src="/assets/images/logo/logo-white-lg.png" style="z-index: 99" />
         </div>
-        <div class="row flex-grow-1">
-            <div class="d-flex flex-column col-sm-10 col-md-8 col-lg-6 mx-auto">
+    </div>
+    <div class="page-auth__section">
+        <div class="page-auth__form">
                 <form>
                         <div class="form-group">
-                                    <label for="" style="">First Name</label>            <input type="text" class="" name="" id=""  placeholder="Enter your name" /></div>        <div class="form-group">
-                                    <label for="" style="">Email</label>            <input type="email" class="" name="" id=""  placeholder="Enter your email" /></div>        <div class="form-group">
-                                    <label for="" style="">Select city</label>            <select class="form-select " id="" placeholder="Select city"  >
+                                    <label for="" class="">First Name</label>            <input type="text" class="" name="" id=""  placeholder="Enter your name" /></div>        <div class="form-group">
+                                    <label for="" class="">Email</label>            <input type="email" class="" name="" id=""  placeholder="Enter your email" /></div>        <div class="form-group">
+                                    <label for="" class="">Select city</label>            <select class="form-select " id="" placeholder="Select city"  >
                                         <option value="option1">Kyiv, UA</option>
                                         <option value="option2">Chernihiv, UA</option>
                                         <option value="option3">Mykolaiv, UA</option>
                                     </select></div>        <div class="form-group">
-                                    <label for="" style="">Password</label>            <input type="password" class="" name="" id=""  placeholder="Enter your password" /></div>        <div class="form-group">
-                                    <label for="" style="">Repeat Password</label>            <input type="password" class="" name="" id=""  placeholder="Repeat your password" /></div>        <div class="form-group">
-                                    <div class="form-check">
+                                    <label for="" class="">Password</label>            <input type="password" class="" name="" id=""  placeholder="Enter your password" /></div>        <div class="form-group">
+                                    <label for="" class="">Repeat Password</label>            <input type="password" class="" name="" id=""  placeholder="Repeat your password" /></div>        <div class="form-group">
+                                    <div class="">
                                         <input type="checkbox" id="acceptTerms" false />
                                         <label class="checkbox" for="acceptTerms">Accept Terms and Conditions</label>
                                     </div></div>    <div class="mx-auto">
                         <button class="btn btn-primary">Sign up</button>    </div>
-                </form>            </div>
-            <div class="row justify-content-between align-content-start pb-5 flex-grow-1 d-flex flex-column">
-                <h5 class="text-center font-weight-bolder">Я вже зареєстрований</h5>
-                <a class="btn btn-text btn-dark btn-md" routerLink="/auth/login" routerLinkActive="router-link-active"
-                    i18n>Login</a>
-            </div>
+                </form>        </div>
+         <div class="">
+            <label class="text-center" i18n>Have no account yet?</label>
+            <a href="/auth/signup" class="btn btn-md btn-text" i18n>Sign Up</a>
         </div>
     </div>
 </div>

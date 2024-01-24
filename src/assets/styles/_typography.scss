@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: 'JostBold';
-  src: url('../fonts/Jost-Bold.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../fonts/Jost-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -22,8 +22,8 @@ $disabled-text-color: white;
 $placeholder-color: $color-dark-grey-40;
 $link-color: $color-black;
 
-body,a,label,p,h1,h2,h3,h4,h5,h6 {
-  font-family: "Jost", sans-serif;
+body>* {
+  font-family: "JostBold", sans-serif;
 }
 
 a {

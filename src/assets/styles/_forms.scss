@@ -58,7 +58,7 @@ select {
   display: flex;
   flex-direction: column;
   @include spacing(margin-bottom, 4);
-  label {
+  &__label {
     font-family: "JostBold";
     font-size: 13px;
     text-transform: uppercase;
@@ -68,7 +68,7 @@ select {
 
 // *** Checkbox and radio button base styles
 input[type="checkbox"] {
-  position: absolute;
+  position: fixed;
   opacity: 0;
   z-index: -1;
 }
