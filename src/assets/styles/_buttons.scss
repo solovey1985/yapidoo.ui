@@ -20,14 +20,15 @@
   margin-right: auto !important;
   margin-left: auto !important;
   border: none !important;
-  
+
   &.btn-lg {
     margin: 0 auto;
     width: 100%;
   }
 
   &.btn-md {
-    width: 296px;
+    width: 50%;
+    margin: auto 0;
   }
 
   &.btn-sm {
@@ -43,7 +44,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     @include gradient-bg($color-primary, $color-secondary);
-    border-radius: map-get($map: $radiuses, $key: "xl" ) !important;
+    border-radius: map-get($map: $radiuses, $key: "xl") !important;
     // Hover state
     &:hover {
       background: $gradient-primary-hover;
@@ -74,7 +75,6 @@
     &:active {
       background: $gradient-default-pressed;
     }
-
   }
 
   &.btn-text {
@@ -111,17 +111,5 @@
       color: $color-white !important;
       background-color: $color-dark-grey !important;
     }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .btn-primary {
-    max-width: 140px;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .btn-primary {
-    max-width: 180px;
   }
 }

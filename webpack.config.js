@@ -3,9 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 module.exports = {
-  entry: { yapidoo_styles: "./src/assets/styles/index.scss",
-           bootstrap: "./node_modules/bootstrap/scss/bootstrap.scss",         
-},
+  entry: { yapidoo_styles: "./src/assets/styles/index.scss"},
   output: {
     path: path.resolve(__dirname, "public")
   },

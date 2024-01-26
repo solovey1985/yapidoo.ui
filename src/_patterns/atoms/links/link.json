@@ -2,5 +2,6 @@
   "label": "I don't have an account",
   "text": "Register",
   "href": "#",
-  "class": "btn btn-text"
+  "class": "btn btn-text",
+  "icon" : "fa fa-user-plus mr-3"
 }

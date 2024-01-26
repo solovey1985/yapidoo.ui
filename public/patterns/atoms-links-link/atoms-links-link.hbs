@@ -1,1 +1,6 @@
-<a href="{{ href }}" class="{{ class }}">{{ text }}</a>
+<a href="{{ href }}" class="{{ class }}">
+    {{#if icon}}
+    {{> atoms-icon icon=icon }}
+    {{/if}}
+    {{ text }}
+</a>

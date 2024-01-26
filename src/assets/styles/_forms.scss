@@ -13,28 +13,18 @@ form {
   }
 }
 
-.auth-form {
-  background-color: rgba(255, 255, 255, 0.4); //var
-  background-blend-mode: saturation;
-  position: relative;
-  top: -20%; // var
-  box-shadow: 15px 15px 15px 0px rgba(194, 194, 194, 0.1) inset; //var
-  backdrop-filter: blur(15px); //var
-  border-radius: 12px; //var
-}
-
 input,
 textarea,
 select {
   color: $color-dark-grey-40;
   padding: 12px 15px 12px 15px; //var spacing
   font-size: 15px;
-  width: 100%;
-  height: 40px; // var
+  height: 20px; // var
   background: #f5f6f8; //var coloers
   box-shadow: 0px 2px 10px -2px rgba(0, 0, 0, 0.1); //var colors include as shadow
   border-radius: 8px; // var sizes/ spacing
   border: 1px #ebebeb solid; // var borders
+  margin-bottom: 0.8rem;
 
   &:hover {
     color: $color-dark-grey;
@@ -54,14 +44,20 @@ select {
   }
 }
 
+select {
+  height: 42px;
+  padding: 10px 15px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-  @include spacing(margin-bottom, 4);
+  @include spacing(margin-bottom, 2);
   &__label {
     font-family: "JostBold";
     font-size: 13px;
     text-transform: uppercase;
+    font-weight: 600;
     @include spacing(margin-bottom, 2);
   }
 }
@@ -72,14 +68,22 @@ input[type="checkbox"] {
   opacity: 0;
   z-index: -1;
 }
-label.checkbox {
-  // Basic styling for label
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox__label {
   position: relative;
   padding-left: map-get($map: $spacings, $key: 6);
   cursor: pointer;
 
   &::before {
-    // This creates a custom checkbox appearance
+    align-self: center;
     content: "";
     position: absolute;
     left: 0;
@@ -112,7 +116,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 // *** Radio button base styles
-input[type="radiox"] {
+input[type="radiobutton"] {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -163,14 +167,33 @@ label.radio-button {
     border-color: $color-dark-grey;
   }
 }
+
 input.has-danger {
   border: 1px solid red;
 }
 
-form {
-  z-index: 1000;
-}
 .error {
   color: $color-red;
   font-size: 13px; // var
+}
+
+.form__submit-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+// Specific form styles
+
+// Auth form
+.page-auth__form {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4); //var
+  background-blend-mode: saturation;
+  top: -120px;
+  z-index: 100;
+  box-shadow: 15px 15px 15px 0px rgba(194, 194, 194, 0.1) inset; //var
+  backdrop-filter: blur(15px); //var
+  border-radius: 12px; //var
 }

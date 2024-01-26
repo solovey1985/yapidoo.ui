@@ -1,0 +1,12 @@
+{
+    "label":{
+        "label": "Label",
+        "class": "label-link__label"
+    },
+    "link": {
+        "href": "#",
+        "text": "Link Text",
+        "class": "link-primary link-uppercase"    
+    }
+    
+}

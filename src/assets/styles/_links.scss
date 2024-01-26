@@ -1,0 +1,36 @@
+.link {
+  text-decoration: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  &:hover {
+    text-decoration: none;
+  }
+}
+.link-black {
+  color: $color-black;
+  i {
+    color: $color-black;
+  }
+}
+.link-uppercase {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.link-primary {
+  color: $color-primary;
+}
+
+.label-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.label-link__label{
+  margin-bottom: 1.5rem;
+}

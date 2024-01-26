@@ -37,22 +37,33 @@
       ],
       "submit": {
         "text": "Login",
-        "classes": "btn-primary"
+        "classes": "btn btn-primary btn-md"
       }
     },
+    "divider": true,
     "navigation": {
+      "class": "nav-section--full-height",
       "links": [
         {
-          "label":"I don't have an account",
-          "text": "Register",
-          "href": "/register",
-          "class": "btn btn-text btn-light"
+          "link": {
+            "href": "#",
+            "text": "Login with facebook",
+            "class": "link-black link-uppercase",
+            "icon" : "fab fa-facebook fa-2x mr-3"
+
+          }
         },
         {
-          "text": "Forgot password?",
-          "href": "/forgot-password"
+          "label": {
+            "label": "Label",
+            "class": "label-link__label"
+          },
+          "link": {
+            "href": "#",
+            "text": "Link Text",
+            "class": "link-primary link-uppercase"
+          }
         }
-  
       ]
     }
   }

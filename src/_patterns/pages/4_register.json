@@ -70,5 +70,31 @@
       "text": "Sign up",
       "classes": "btn-primary"
     }
+  },
+  "divider": true,
+  "navigation": {
+    "class": "nav-section--full-height",
+    "links": [
+      {
+        "link": {
+          "href": "#",
+          "text": "Login with facebook",
+          "class": "link-black link-uppercase",
+          "icon" : "fab fa-facebook fa-2x mr-3"
+
+        }
+      },
+      {
+        "label": {
+          "text": "I have an account",
+          "class": "label-link__label"
+        },
+        "link": {
+          "href": "#",
+          "text": "Login",
+          "class": "link-primary link-uppercase"
+        }
+      }
+    ]
   }
 }
