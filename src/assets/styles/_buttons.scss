@@ -17,9 +17,6 @@
   min-width: 120px;
   height: 40px;
   border: none;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  border: none !important;
 
   &.btn-lg {
     margin: 0 auto;
@@ -112,4 +109,41 @@
       background-color: $color-dark-grey !important;
     }
   }
+}
+
+// TODO: Add more button styles for different button types
+.btn--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  &:hover {
+    background: $gradient-default-hover;
+  }
+
+  &:active {
+    background: $gradient-default-pressed;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn-group--full-width {
+  width: 100%;
+  justify-content: space-between !important;
+}
+
+.btn-group--column {
+  flex-direction: column;
 }

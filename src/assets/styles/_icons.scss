@@ -1,3 +1,106 @@
+.fa {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+.fa-2x{
+  width: 2rem;
+  height: 2rem;
+  padding: 4%;
+}
+
+// Shapes
+.icon--outline {
+  border: 1px solid;
+  border-radius: 20%;
+}
+
+.icon--outline-bold {
+  border: 2px solid;
+  border-radius: 20%;
+}
+
+.icon--outline-square {
+  border-radius: 20%;
+}
+
+.icon--outline-circle {
+  border-radius: 50%;
+}
+
+//Colors and Backgrounds
+.icon--bg-grey-70 {
+  background-color: $color-dark-grey-70;
+  color: $color-white;
+}
+
+.icon--bg-grey {
+  background-color: $color-dark-grey;
+  color: $color-white;
+}
+
+.icon--bg-primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.icon--color-primary {
+  color: $color-primary;
+}
+
+// Sizes
+.icon--size-sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon--size-md {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  
+}
+
+.icon--size-lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+// Social Media Icons
 .fa-facebook {
-    color: #3b5998;
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-github {
+  color: #333;
+}
+
+.fa-google-plus {
+  color: #dd4b39;
+}
+
+.fa-pinterest {
+  color: #cb2027;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-instagram {
+  color: #125688;
+}
+
+.fa-vimeo {
+  color: #aad450;
 }

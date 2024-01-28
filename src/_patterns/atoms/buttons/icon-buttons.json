@@ -1,0 +1,10 @@
+{
+  "buttons": [
+    {
+      "icon": "fa fa-user icon--size-md icon--outline-circle icon--bg-grey"
+    },
+    {
+      "icon": "fa fa-bars  icon--size-md icon--outline-bold icon--outline-circle"
+    }
+  ]
+}

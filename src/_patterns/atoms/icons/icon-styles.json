@@ -1,0 +1,83 @@
+{
+  "groups": [
+    {
+      "name": "Shapes",
+      "icons": [
+        {
+          "icon": "fa fa-user "
+        },
+        {
+          "icon": "fa fa-user icon--outline"
+        },
+        {
+          "icon": "fa fa-user icon--outline icon--outline-circle"
+        }
+      ]
+    },
+    {
+      "name": "Sizes",
+      "icons": [
+        {
+          "icon": "fa fa-user"
+        },
+        {
+          "icon": "fa fa-user fa-2x"
+        },
+        {
+          "icon": "fa fa-user fa-3x"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--outline icon--outline-circle"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--outline icon--outline-square"
+        },
+        {
+          "icon": "fa fa-user fa-3x icon--outline icon--outline-square"
+        }
+      ] 
+    },
+    {
+      "name": "Colors and Backgrounds",
+      "icons": [
+        {
+          "icon": "fa fa-user icon--bg-gray-70"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--bg-primary"
+        },
+        {
+          "icon": "fa fa-user fa-3x icon--color-primary"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--outline icon--outline-square"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--outline icon--outline-square icon--bg-grey-70"
+        },
+        {
+          "icon": "fa fa-chevron-left fa-2x icon--outline-circle icon--bg-grey"
+        },
+        {
+          "icon": "fa fa-close fa-2x icon--outline-circle icon--bg-grey"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--outline icon--outline-circle icon--color-primary"
+        },
+        {
+          "icon": "fa fa-home fa-2x icon--outline-bold icon--outline-circle"
+        },
+        {
+          "icon": "fa fa-plus fa-2x icon--outline-bold icon--outline-circle icon--color-primary"
+        },
+        {
+          "icon": "fa fa-user fa-2x icon--outline-bold icon--outline-circle"
+        },
+        {
+          "icon": "fa fa-bars fa-2x icon--outline-bold icon--outline-circle"
+        }
+      ]
+    }
+  ]
+  
+}

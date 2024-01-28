@@ -1,13 +1,100 @@
 {
-    "icons": [
-        {
-            "icon": "fab fa-facebook"
-        },
-        {
-            "icon": "fa fa-home"
-        },
-        {
-            "icon": "fa fa-user fa-2x"
-        }
-    ]
+  "icons": [
+    {
+      "icon": "fa fa-facebook fa-2x"
+    },
+    {
+      "icon": "fa fa-home"
+    },
+    {
+      "icon": "fa fa-user fa-2x"
+    },
+    {
+      "icon": "fa fa-bars fa-2x"
+    },
+    {
+      "icon": "fa fa-search fa-2x"
+    },
+    {
+      "icon": "fa fa-bell-o fa-2x"
+    },
+    {
+      "icon": "fa fa-ellipsis-v fa-2x"
+    },
+    {
+      "icon": "fa fa-home fa-2x"
+    },
+    {
+      "icon": "fa fa-plus fa-2x"
+    },
+    {
+      "icon": "fa fa-user fa-2x"
+    },
+    {
+      "icon": "fa fa-close fa-2x"
+    },
+    {
+      "icon": "fa fa-chevron-left fa-2x"
+    },
+    {
+      "icon": "fa fa-chevron-right fa-2x"
+    },
+    {
+      "icon": "fa fa-calendar fa-2x"
+    },
+    {
+      "icon": "fa fa-gift fa-2x"
+    },
+    {
+      "icon": "fa fa-pencil fa-2x"
+    },
+    {
+      "icon": "fa fa-trash fa-2x"
+    },
+    {
+      "icon": "fa fa-trash-o fa-2x"
+    },
+    {
+      "icon": "fa fa-clock-o fa-2x"
+    },
+    {
+      "icon": "fa fa-map-marker fa-2x"
+    },
+    {
+      "icon": "fa fa-map fa-2x"
+    },
+    {
+      "icon": "fa fa-map-o fa-2x"
+    },
+    {
+      "icon": "fa fa-map-signs fa-2x"
+    },
+    {
+      "icon": "fa fa-map-pin fa-2x"
+    },
+    {
+      "icon": "fa fa-street-view fa-2x"
+    },
+    {
+      "icon": "fa fa-location-arrow fa-2x"
+    },
+    {
+      "icon": "fa fa-globe fa-2x"
+    },
+    {
+      "icon": "fa fa-heart fa-2x"
+    },
+    {
+      "icon": "fa fa-heart-o fa-2x"
+    },
+    {
+      "icon": "fa fa-thumbs-up fa-2x"
+    },
+    {
+      "icon": "fa fa-thumbs-up fa-rotate-180 fa-2x"
+    },
+    {
+      "icon": "fa fa-thumbs-o-up fa-2x"
+    }
+  ]
 }

@@ -3,6 +3,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
 
   label {
     font-size: 13px;
@@ -69,7 +70,7 @@ input[type="checkbox"] {
   z-index: -1;
 }
 
-.checkbox{
+.checkbox {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -177,7 +178,7 @@ input.has-danger {
   font-size: 13px; // var
 }
 
-.form__submit-group{
+.form__submit-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,6 +189,7 @@ input.has-danger {
 
 // Auth form
 .page-auth__form {
+  width: 90%;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.4); //var
   background-blend-mode: saturation;
@@ -196,4 +198,22 @@ input.has-danger {
   box-shadow: 15px 15px 15px 0px rgba(194, 194, 194, 0.1) inset; //var
   backdrop-filter: blur(15px); //var
   border-radius: 12px; //var
+}
+// Media query for medium screens
+@media (max-width: 1450) {
+  .page-auth__form {
+    width: 70%; // Set width to 60% for medium screens
+  }
+}
+
+@media (max-width: 768px) {
+  .page-auth__form {
+    width: 80%; // Set width to 60% for medium screens
+  }
+}
+// Media query for large screens
+@media (min-width: 1024px) {
+  .page-auth__form {
+    width: 50%; // Set width to 40% for large screens
+  }
 }

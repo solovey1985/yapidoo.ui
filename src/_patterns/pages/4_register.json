@@ -68,7 +68,7 @@
     ],
     "submit": {
       "text": "Sign up",
-      "classes": "btn-primary"
+      "classes": "btn-primary btn-md"
     }
   },
   "divider": true,
@@ -79,7 +79,7 @@
         "link": {
           "href": "#",
           "text": "Login with facebook",
-          "class": "link-black link-uppercase",
+          "class": "link link-black link-uppercase",
           "icon" : "fab fa-facebook fa-2x mr-3"
 
         }
@@ -92,7 +92,7 @@
         "link": {
           "href": "#",
           "text": "Login",
-          "class": "link-primary link-uppercase"
+          "class": "link link-primary link-uppercase"
         }
       }
     ]

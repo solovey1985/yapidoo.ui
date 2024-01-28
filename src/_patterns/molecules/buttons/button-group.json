@@ -2,11 +2,11 @@
     "buttons": [
         {
             "text": "Button",
-            "classes": "btn-dark"
+            "classes": "btn btn-dark"
         },
         {
             "text": "Button",
-            "classes": "btn-default"
+            "classes": "btn btn-default"
         }
     ]
 }
