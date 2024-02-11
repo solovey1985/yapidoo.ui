@@ -1,19 +1,19 @@
 .image-container {
-    width: 100%;
-    margin-right: auto !important;
-    margin-left: auto !important;
+  width: 100%;
+  margin-right: auto !important;
+  margin-left: auto !important;
 
-    &.image-bottom-select-option {
-        height: 46%;
-        overflow-y: clip;
-        img {
-            width: 121%;
-            transform: translate(-12%, 18%);
-        }
+  &.image-bottom-select-option {
+    height: 46%;
+    overflow-y: clip;
+    img {
+      width: 121%;
+      transform: translate(-12%, 18%);
     }
+  }
 }
 
-.image-logo{
-    width: 100%;
-    height: 100%;
+.image-logo {
+  width: 100%;
+  height: 100%;
 }

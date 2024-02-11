@@ -1,5 +1,14 @@
-<div class="top-nav-bar">
-    {{> atoms-icon-button icon="fa fa-bars" class="top-nav-bar__toggle" }}
-    {{>atoms-logo}}
-    {{> molecules-button-group}}
+<div class="top-bar">
+    <div class="top-bar__section">
+        {{> atoms-icon-button icon="fa fa-2x fa-bars" class="top-bar__toggle" }}
+    </div>
+    <div class="top-bar__section top-bar__section--center">
+        {{> atoms-logo}}
+    </div>
+    <div class="top-bar__section top-bar__section--right">
+        <div class="btn-group top-bar__actions">
+            {{> atoms-icon-button icon="fa fa-2x fa-search" class="top-bar__search" }}
+            {{> atoms-icon-button icon="fa fa-2x fa-bell-o" class="top-bar__notifications" }}
+        </div>
+    </div>
 </div>
