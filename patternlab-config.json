@@ -67,8 +67,8 @@
       "annotations": "public/annotations/",
       "styleguide": "public/styleguide/",
       "js": "public/js",
-      "images": "public/assets/images",
-      "fonts": "public/assets/fonts",
+      "images": "public/images",
+      "fonts": "public/fonts",
       "css": "public/css"
     }
   },
