@@ -1,0 +1,52 @@
+.feed {
+  padding: 12px;
+  height: auto;
+}
+
+.event-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid $color-dark-grey-40;
+  border-radius: 8px;
+  @include effect-style-shadow-on-a-card();
+  margin-bottom: 16px;
+
+  // Layout
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  &__row--bottom {
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__column {
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    span{
+      text-overflow: ellipsis;
+    }
+    
+    &--left {
+      justify-self: start;
+    }
+
+    &--right {
+      justify-self: end;
+    }
+  }
+
+  &__image {
+    width: 132px;
+    height: 132px;
+    border-radius: 8px 0 0 0;
+  }
+}

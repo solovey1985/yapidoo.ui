@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "name": "Colors",
+      "labels": [
+        {
+          "text": "Primary",
+          "class": "label--primary"
+        },
+        {
+          "text": "Black",
+          "class": "label--black"
+        },
+        {
+          "text": "Secondary",
+          "class": "label--yellow"
+        },
+        {
+          "text": "Gray",
+          "class": "label--grey"
+        }
+      ]
+    },
+    {
+      "name": "Sizes",
+      "labels": [
+        {
+          "text": "Extra Small",
+          "class": "label-size--xs"
+        },
+        {
+          "text": "Small",
+          "class": "label-size--sm"
+        },
+        {
+          "text": "Medium",
+          "class": "label-size--md"
+        },
+        {
+          "text": "Large",
+          "class": "label-size--lg"
+        },
+        {
+          "text": "Extra Large",
+          "class": "label-size--xl"
+        }
+      ]
+    },
+    {
+      "name": "Font Weights",
+      "labels": [
+        {
+          "text": "Bold",
+          "class": "label-font--bold"
+        }
+      ]
+    },
+    {
+      "name": "Transformations",
+      "labels": [
+        {
+          "text": "Uppercase",
+          "class": "label--uppercase"
+        },
+        {
+          "text": "Lowercase",
+          "class": "label--lowercase"
+        },
+        {
+          "text": "Capitalize words",
+          "class": "label--capitalize"
+        }
+      ]
+    }
+  ]
+}

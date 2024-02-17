@@ -6,7 +6,8 @@ body {
 }
 
 .page {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .page-auth {
@@ -43,7 +44,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-image: url(/assets/images/shared/stars.png);
+    background-image: url(../../assets/images/shared/stars.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;

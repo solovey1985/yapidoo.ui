@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap');
 @font-face {
-  font-family: 'Jost';
-  src: url('../fonts/Jost-Regular.ttf') format('truetype');
+  font-family: "Jost";
+  src: url("../../assets/fonts/Jost-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'JostBold';
-  src: url('../fonts/Jost-ExtraBold.ttf') format('truetype');
+  font-family: "JostBold";
+  src: url("../../assets/fonts/Jost-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -22,8 +21,23 @@ $disabled-text-color: white;
 $placeholder-color: $color-dark-grey-40;
 $link-color: $color-black;
 
-body>* {
-  font-family: "JostBold", sans-serif;
+// font-sizes
+$font-sizes: (
+  "xs": 10px,
+  "sm": 13px,
+  "md": 15px,
+  "lg": 20px,
+  "xl": 24px,
+);
+
+$font-size-xs: map-get($font-sizes, "xs");
+$font-size-sm: map-get($font-sizes, "sm");
+$font-size-md: map-get($font-sizes, "md");
+$font-size-lg: map-get($font-sizes, "lg");
+$font-size-xl: map-get($font-sizes, "xl");
+
+body > * {
+  font-family: "Jost", sans-serif;
 }
 
 a {
@@ -49,8 +63,7 @@ h3 {
 }
 
 h4 {
-
-  font-size: map-get($font-sizes , "xsm");
+  font-size: map-get($font-sizes, "xsm");
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -59,6 +72,56 @@ h5 {
   font-size: map-get($font-sizes, "xsm");
 }
 
-.text-primary{
+.text-primary {
   color: $color-primary;
+}
+
+// Labels
+.label {
+  &--primary {
+    color: $color-primary;
+  }
+  &--black {
+    color: $color-black;
+  }
+
+  &--yellow {
+    color: $color-secondary;
+  }
+    &--grey {
+    color: $color-dark-grey-70;
+  }
+
+  // Text Transformation
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--lowercase {
+    text-transform: lowercase;
+  }
+
+// Font Sizes
+  &-size--xs {
+    font-size: $font-size-xs;
+  }
+  &-size--sm {
+    font-size: $font-size-sm;
+  }
+  &-size--md {
+    font-size: $font-size-md;
+  }
+  &-size--lg {
+    font-size: $font-size-lg;
+  }
+  &-size--xl {
+    font-size: $font-size-xl;
+  }
+  &-font--bold{
+    font-family: "JostBold", sans-serif;
+  }
 }

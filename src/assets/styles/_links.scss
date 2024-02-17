@@ -1,9 +1,11 @@
 .link {
   text-decoration: none;
-  
+
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  width: 100%;
+  
   &:hover {
     text-decoration: none;
   }
@@ -23,14 +25,14 @@
   color: $color-primary;
 }
 
-.label-link{
+.label-link {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
+  width: 100%;
 }
 
-.label-link__label{
+.label-link__label {
   margin-bottom: 1.5rem;
 }
