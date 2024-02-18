@@ -11,19 +11,27 @@
   justify-content: space-between;
   border: 1px solid $color-dark-grey-40;
   border-radius: 8px;
-  @include effect-style-shadow-on-a-card();
   margin-bottom: 16px;
+  gap: 4px;
 
-  // Layout
+  @include effect-style-shadow-on-a-card();
+
   &__row {
-    width: 100%;
     display: flex;
     flex-direction: row;
-  }
-  &__row--bottom {
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+
+    &--wide {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--actions {
+      flex-basis: 80px;
+      align-items: center;
+      padding: 8px;
+    }
   }
 
   &__column {
@@ -31,16 +39,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    span{
+
+    span {
       text-overflow: ellipsis;
     }
-    
+
     &--left {
+      flex-grow: 0;
+      flex-basis: auto;
       justify-self: start;
     }
 
     &--right {
-      justify-self: end;
+      flex-grow: 1;
+      flex-basis: 100%;
     }
   }
 
