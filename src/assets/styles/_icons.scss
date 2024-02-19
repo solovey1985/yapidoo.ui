@@ -1,14 +1,12 @@
+
+$margin:map-get($map: $spacings, $key:1 );
+
 .fa {
   display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2%;
-}
-.fa-2x{
-  width: 2rem;
-  height: 2rem;
-  padding: 4%;
+  margin-right: $margin;
 }
 
 // Shapes
@@ -66,6 +64,11 @@
 .icon--size-lg {
   width: 3rem;
   height: 3rem;
+}
+
+.icon-label {
+  display: flex;
+  align-items: center;
 }
 
 // Social Media Icons

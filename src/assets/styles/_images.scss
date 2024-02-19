@@ -31,3 +31,62 @@
   overflow: hidden;
   gap: 1rem;
 }
+
+// Avatar Stack
+$avatar-size-small: 30px;
+$avatar-size-medium: 42px;
+$avatar-size-large: 54px;
+$avatar-size-extra-large: 66px;
+$size-step: 12px;
+
+.avatar-stack {
+  position: relative;
+  display: flex;
+  flex-direction: row; // to stack avatars from right to left
+
+  .avatar {
+    border-radius: 50%;
+    border: 2px solid white; // adjust color as necessary
+    position: relative;
+    & + .avatar {
+      margin-right: -15px; // adjust overlap as necessary
+    }
+  }
+
+  .avatar-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #333; // adjust color as necessary
+    color: white;
+    border: 2px solid white; // adjust color as necessary
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  // Size variants
+  &.small .avatar, &.small .avatar-total {
+    width: $avatar-size-small;
+    height: $avatar-size-small;
+    font-size: calc(0.8rem - #{$size-step} / 4);
+  }
+
+  &.medium .avatar, &.medium .avatar-total {
+    width: $avatar-size-medium;
+    height: $avatar-size-medium;
+    font-size: 0.8rem;
+  }
+
+  &.large .avatar, &.large .avatar-total {
+    width: $avatar-size-large;
+    height: $avatar-size-large;
+    font-size: calc(0.8rem + #{$size-step} / 4);
+  }
+
+  &.extra-large .avatar, &.extra-large .avatar-total {
+    width: $avatar-size-extra-large;
+    height: $avatar-size-extra-large;
+    font-size: calc(0.8rem + #{$size-step} / 2);
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "sizeClass":"extra-large",
+    "imagePaths":[
+       "../../assets/images/avatar/avatar-small-1.png",
+       "../../assets/images/avatar/avatar-small-2.png",
+       "../../assets/images/avatar/avatar-small-3.png"
+    ],
+    "totalAmount":5
+ }

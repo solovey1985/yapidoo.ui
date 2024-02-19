@@ -1,10 +1,17 @@
+$rows-margin: map-get(
+  $map: $spacings,
+  $key: 2,
+);
+
 .feed {
   padding: 12px;
   height: auto;
 }
 
 .event-card {
+  background-color: $color-dark-grey-40;
   width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,23 +26,28 @@
   &__row {
     display: flex;
     flex-direction: row;
+    height: 100%;
     width: 100%;
     gap: 12px;
 
     &--wide {
       align-items: center;
       justify-content: space-between;
+      box-sizing: border-box;
+      padding-right: $rows-margin;
     }
 
     &--actions {
-      flex-basis: 80px;
       align-items: center;
       padding: 8px;
+      box-sizing: border-box;
+    }
+    &--pull-down {
+      align-self: flex-end;
     }
   }
 
   &__column {
-    margin-right: 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,20 +57,29 @@
     }
 
     &--left {
-      flex-grow: 0;
-      flex-basis: auto;
-      justify-self: start;
+      flex-basis: 40%;
+      height: auto;
     }
 
     &--right {
-      flex-grow: 1;
-      flex-basis: 100%;
+      width: 100%;
+      min-height: 100%;
+      gap: $rows-margin;
+      padding-bottom: $rows-margin;
     }
   }
 
   &__image {
-    width: 132px;
-    height: 132px;
-    border-radius: 8px 0 0 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    img {
+      object-fit: fill;
+      max-width: 100%;
+      height: auto;
+      max-height: 210px;
+      border-radius: 8px 0 0 0;
+    }
   }
 }
