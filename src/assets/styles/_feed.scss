@@ -9,7 +9,6 @@ $rows-margin: map-get(
 }
 
 .event-card {
-  background-color: $color-dark-grey-40;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -75,7 +74,7 @@ $rows-margin: map-get(
     height: 100%;
 
     img {
-      object-fit: fill;
+      object-fit: cover;
       max-width: 100%;
       height: auto;
       max-height: 210px;

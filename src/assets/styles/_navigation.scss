@@ -26,11 +26,14 @@
   }
 }
 
+
 // Top bar styles
 .top-bar {
+  @include blur();
   @extend %flex-space-between;
   padding: 1rem;
-  height: 3.5rem;
+  height: 84px;
+  box-sizing: border-box;
 
   &__section {
     @extend %flex-center;
@@ -52,3 +55,11 @@
   }
 }
 
+// Bottom bar styles
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  @extend %flex-space-between;
+  @include blur();
+  @include shadow();
+}

@@ -1,6 +1,7 @@
 {
+  "title": "Event Title",
   "avatars": {
-    "sizeClass": "extra-large",
+    "sizeClass": "medium",
     "imagePaths": [
       "../../assets/images/avatar/avatar-small-1.png",
       "../../assets/images/avatar/avatar-small-2.png",

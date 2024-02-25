@@ -148,3 +148,13 @@
 .btn-group--column {
   flex-direction: column;
 }
+
+.btn--text-icon {
+  border: none !important;
+  background-color: transparent;
+  width: fit-content !important;
+  height: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -46,10 +46,15 @@ $size-step: 12px;
 
   .avatar {
     border-radius: 50%;
-    border: 2px solid white; // adjust color as necessary
+    border: 2px solid $color-dark-grey-20; // adjust color as necessary
     position: relative;
-    & + .avatar {
-      margin-right: -15px; // adjust overlap as necessary
+    &:not(:first-child) {
+      margin-left: -15px; // adjust overlap as necessary
+      z-index: 1;
+    }
+
+    &:first-child {
+      z-index: 2; // Ensures the first avatar is on top
     }
   }
 
@@ -58,9 +63,9 @@ $size-step: 12px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #333; // adjust color as necessary
-    color: white;
-    border: 2px solid white; // adjust color as necessary
+    background-color: $color-dark-grey; // adjust color as necessary
+    color: $color-bg;
+    border: 2px solid $color-white; // adjust color as necessary
     font-size: 0.8rem;
     font-weight: bold;
   }

@@ -1,3 +1,5 @@
 <div class="feed">
-    {{>organisms-event-card}}
+    {{#each events as |event|}}
+        {{>organisms-event-card}}
+    {{/each}}
 </div>

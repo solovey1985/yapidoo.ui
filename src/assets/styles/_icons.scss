@@ -1,31 +1,49 @@
-
-$margin:map-get($map: $spacings, $key:1 );
+$margin: map-get(
+  $map: $spacings,
+  $key: 1,
+);
 
 .fa {
   display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: $margin;
+  box-sizing: border-box !important;
+  padding: 1px;
+}
+
+.fa-2x {
+  padding: 2px;
+  width: 48px;
+  height: 48px;
+}
+.fa-3x {
+  padding: 3px;
+  width: 56px;
+  height: 56px;
+}
+
+@mixin icon-outline($radius: 20%, $border: 1px solid, $color: $color-dark-grey-40) {
+  border: 1px solid $color;
+  border-radius: $radius;
+
 }
 
 // Shapes
 .icon--outline {
-  border: 1px solid;
-  border-radius: 20%;
+  @include icon-outline();
 }
 
 .icon--outline-bold {
-  border: 2px solid;
-  border-radius: 20%;
+  @include icon-outline(50%, 2px solid);
 }
 
 .icon--outline-square {
-  border-radius: 20%;
+  @extend .icon--outline;
 }
 
 .icon--outline-circle {
-  border-radius: 50%;
+  @include icon-outline(50%, 1px solid);
 }
 
 //Colors and Backgrounds
@@ -46,6 +64,7 @@ $margin:map-get($map: $spacings, $key:1 );
 
 .icon--color-primary {
   color: $color-primary;
+  border-color: $color-primary;
 }
 
 // Sizes
@@ -58,7 +77,6 @@ $margin:map-get($map: $spacings, $key:1 );
   width: 2rem;
   height: 2rem;
   padding: 0;
-  
 }
 
 .icon--size-lg {

@@ -194,10 +194,10 @@ input.has-danger {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.4); //var
   background-blend-mode: saturation;
+  backdrop-filter: blur(15px); //var
   top: -120px;
   z-index: 100;
   box-shadow: 15px 15px 15px 0px rgba(194, 194, 194, 0.1) inset; //var
-  backdrop-filter: blur(15px); //var
   border-radius: 12px; //var
 }
 // Media query for medium screens
