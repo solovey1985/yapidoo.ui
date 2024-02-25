@@ -16,28 +16,26 @@ body {
     position: relative;
     z-index: 1;
   }
-}
+  .top-bar,
+  .bottom-bar {
+    position: fixed;
+    width: 100%;
 
-.top-bar,
-.bottom-bar {
-  position: fixed;
-  width: 100%;
- 
-  color: #fff;
-  z-index: 10;
-}
+    color: #fff;
+    z-index: 10;
+  }
 
-.top-bar {
-  height: 80px;
-  top: 0; // Fix to the top of the viewport
-}
+  .top-bar {
+    height: 80px;
+    top: 0; // Fix to the top of the viewport
+  }
 
-.bottom-bar {
-  padding: 12px;
-  height: 70px;
-  bottom: 0; // Fix to the bottom of the viewport
+  .bottom-bar {
+    padding: 12px;
+    height: 70px;
+    bottom: 0; // Fix to the bottom of the viewport
+  }
 }
-
 
 .page-auth {
   height: 100vh;
