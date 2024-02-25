@@ -1,0 +1,22 @@
+<div class="page page-auth">
+    <div class="page-auth__section page-auth__section--primary">
+        <div class="page-auth__logo">
+            {{>atoms-logo-white-lg}}
+        </div>
+    </div>
+    <div class="page-auth__section page-auth__section--shift-up">
+        <div class="page-auth__form">
+            {{#with form}}
+            {{>organisms-form}}
+            {{/with}}
+        </div>
+    </div>
+    <div class="page-auth_section page-auth__section--shift-up">
+        {{#if divider}}
+        {{>atoms-divider}}
+        {{/if}}
+        {{#with navigation}}
+        {{>organisms-navigation-section}}
+        {{/with}}
+    </div>
+</div>

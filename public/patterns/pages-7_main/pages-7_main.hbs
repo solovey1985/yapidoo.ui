@@ -1,0 +1,10 @@
+<div class="page">
+    {{> organisms-top-bar}}
+    <div class="content">
+    {{> organisms-filter-bar}}
+    {{#with feed}}
+        {{> organisms-feed feed=feed}}
+    {{/with}}
+    </div>
+    {{> organisms-bottom-bar}}
+</div>

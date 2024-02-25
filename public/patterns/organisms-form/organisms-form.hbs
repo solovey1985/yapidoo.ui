@@ -1,0 +1,10 @@
+<form class="{{class}}">
+    {{#each inputs}}
+        {{>molecules-form-group }}
+    {{/each}}
+    {{#with submit}}
+    <div class="form__submit-group">
+        {{>atoms-button text=text classes=classes }}
+    </div>
+    {{/with}}
+</form>

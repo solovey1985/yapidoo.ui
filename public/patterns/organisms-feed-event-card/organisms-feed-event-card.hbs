@@ -1,0 +1,40 @@
+<div class="event-card">
+    <div class="event-card__row">
+        <div class="event-card__column event-card__column--left">
+            <div class="event-card__image">
+                <img src="../../assets/images/events/event-1.png" data-event-image="" class="event-card__image"
+                    alt="Image Event">
+            </div>
+        </div>
+        <div class="event-card__column event-card__column--right">
+            <div class="event-card__row event-card__row--wide">
+                {{>atoms-label text="11.07 @5.00 AM" class="label--primary label--uppercase label-size--lg"}}
+                {{>atoms-icon-button icon="fa fa-2x fa-heart-o"}}
+            </div>
+            <div class="event-card__row">
+                {{>atoms-label text=title class="label-font--bold label-size--lg"}}
+            </div>
+            <div class="event-card__row">
+                {{>atoms-icon-label text="Маріїнський парк" icon="fa-map-pin"}}
+            </div>
+            <div class="event-card__row event-card__row--pull-down event-card__row--wide">
+                <div>
+                    {{>atoms-icon icon="fa fa-2x fa-clock-o icon--color-primary"}}
+                </div>
+                <div>
+                    {{#with avatars}}
+                    {{>organisms-avatar-stack sizeClass=sizeClass imagePaths=imagePaths totalAmount=totalAmount}}
+                    {{/with}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="event-card__row event-card__row--actions event-card__row--wide">
+        <div class="event-card__column">
+            {{>molecules-image-profile text="Євген Підлужний"}}
+        </div>
+        <div class="event-card__column">
+            <button class="btn btn-primary btn-md">я піду</button>
+        </div>
+    </div>
+</div>
