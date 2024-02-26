@@ -1,0 +1,44 @@
+<div class="page page--event">
+    <div class="event__image">
+        <img src="../../assets/images/events/event-1.png" alt="Image Event">
+    </div>
+    <div class="event__content">
+        <div class="event__card">
+            {{> atoms-label text="11.07 @5.00 AM" class="label--primary label--uppercase label-size--lg"}}
+            <div class="event__info event__info--wide">
+                {{>atoms-label text="Йога в парку на світанку" class="label-font--bold label--white label-size--xl"}}
+                {{> atoms-icon-button icon="fa fa-2x fa-heart-o"}}
+            </div>
+            <div class="event__info">
+                {{>atoms-icon-label text="Маріїнський парк" icon="fa-map-pin"}}
+                {{>atoms-icon-label text="Публічна подія" icon="fa-lock-open"}}
+            </div>
+            <div class="event__info">
+                <div class="event__info__header">
+                    {{>atoms-label text="Подію створив" class="label--grey label-size--sm"}}
+                </div>
+                {{>molecules-image-profile text="Євген Підлужний"}}
+            </div>
+            <div class="event__info">
+                <div class="event__info__header">
+                    {{>atoms-label text="Про подію" class="label--grey label-size--sm"}}
+                </div>
+                {{>atoms-label
+                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, similique."
+                class="label-size--md"
+                }}
+            </div>
+            <div class="event__info">
+                <div class="event__info__header">
+                    {{>atoms-label text="Хто йде" class="label--grey label-size--sm"}}
+                </div>
+                {{#with avatars}}
+                {{>organisms-avatar-stack sizeClass=sizeClass imagePaths=imagePaths totalAmount=totalAmount}}
+                {{/with}}
+            </div>
+        </div>
+    </div>
+    <div class="event__actions">
+        {{>atoms-button text="Я піду" classes="btn-primary btn-md"}}
+    </div>
+</div>

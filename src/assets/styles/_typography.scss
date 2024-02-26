@@ -88,8 +88,12 @@ h5 {
   &--yellow {
     color: $color-secondary;
   }
-    &--grey {
+  &--grey {
     color: $color-dark-grey-70;
+  }
+
+  &--white {
+    color: $color-white;
   }
 
   // Text Transformation
@@ -105,7 +109,7 @@ h5 {
     text-transform: lowercase;
   }
 
-// Font Sizes
+  // Font Sizes
   &-size--xs {
     font-size: $font-size-xs;
   }
@@ -121,7 +125,7 @@ h5 {
   &-size--xl {
     font-size: $font-size-xl;
   }
-  &-font--bold{
+  &-font--bold {
     font-family: "JostBold", sans-serif;
   }
 }
