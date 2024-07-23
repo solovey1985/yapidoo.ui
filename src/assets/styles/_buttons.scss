@@ -1,13 +1,9 @@
-@mixin gradient-bg(
-  $color1,
-  $color2,
-  $angle: 232deg,
-  $start: 31.4%,
-  $end: 122.19%
-) {
+// Mixin for creating a gradient background
+@mixin gradient-bg($color1, $color2, $angle: 232deg, $start: 31.4%, $end: 122.19%) {
   background: linear-gradient($angle, $color1 $start, $color2 $end);
 }
 
+// Base button styles
 .btn {
   font-family: "JostBold", sans-serif;
   font-size: 16px;
@@ -18,42 +14,22 @@
   height: 40px;
   border: none;
   cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.9s ease;
 
-  &.btn-lg {
-    margin: 0 auto;
-    width: 100%;
-  }
+  // Size variants
+  &.btn-lg { margin: 0 auto; width: 100%; }
+  &.btn-md { width: 50%; margin: auto 0; }
+  &.btn-sm { font-size: 11px; width: 98px; height: 28px; }
 
-  &.btn-md {
-    width: 50%;
-    margin: auto 0;
-  }
-
-  &.btn-sm {
-    font-size: 11px;
-    width: 98px;
-    height: 28px;
-  }
-
+  // Primary variant
   &-primary {
-    padding: 10px 20px;
-    border: none;
-    color: $color-white;
-    transition: background-color 0.3s ease-in-out;
     @include gradient-bg($color-primary, $color-secondary);
     border-radius: map-get($map: $radiuses, $key: "xl") !important;
-    // Hover state
-    &:hover {
-      background: $gradient-primary-hover;
-      opacity: 0.9;
-    }
+    color: $color-white;
 
-    // Active/Pressed state
-    &:active {
-      background: $gradient-primary-pressed;
-    }
-
-    // Disabled state
+    &:hover { background: $gradient-primary-hover; opacity: 0.9; }
+    &:active { background: $gradient-primary-pressed; }
     &:disabled {
       background: $color-dark-grey-20;
       color: $color-dark-grey-70;
@@ -61,49 +37,27 @@
     }
   }
 
+  // Default variant
   &-default {
     color: $color-primary !important;
     background: $color-bg;
-
-    &:hover {
-      background: $gradient-default-hover;
-    }
-
-    &:active {
-      background: $gradient-default-pressed;
-    }
+    &:hover { background: $gradient-default-hover; }
+    &:active { background: $gradient-default-pressed; }
   }
 
+  // Text button variant
   &.btn-text {
     background: none !important;
     color: $color-primary !important;
-    font-size: 16px;
-    font-weight: bold !important;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: color 0.9s ease;
     display: flex !important;
     align-items: center;
     justify-content: center;
 
-    &:hover {
-      background-color: $color-bg-text-hover !important;
-    }
+    &:hover { background-color: $color-bg-text-hover !important; }
+    &:active { background-color: $color-bg-text-pressed !important; }
+    &:disabled { color: $color-dark-grey-40 !important; }
 
-    &:active {
-      color: $color-primary;
-      background-color: $color-bg-text-pressed !important;
-    }
-
-    &:disabled {
-      border: none;
-      color: $color-dark-grey-40 !important;
-    }
-
-    &.btn-light {
-      color: $color-dark-grey-70 !important;
-    }
-
+    &.btn-light { color: $color-dark-grey-70 !important; }
     &.btn-dark {
       color: $color-white !important;
       background-color: $color-dark-grey !important;
@@ -111,50 +65,31 @@
   }
 }
 
-// TODO: Add more button styles for different button types
+// Icon button variant
 .btn--icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend .btn; // Extend .btn to include base styles
   padding: 0;
   min-width: 40px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: none;
   background: none;
-  cursor: pointer;
-  &:hover {
-    background: $gradient-default-hover;
-  }
 
-  &:active {
-    background: $gradient-default-pressed;
+  &:hover, &:active { background: $gradient-default-hover; }
+  .fa{
+    height: 40px;
+    width: 40px;
   }
 }
 
+// Button group container
 .btn-group {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  &--full-width { width: 100%; justify-content: space-between !important; }
+  &--column { flex-direction: column; }
 }
 
-.btn-group--full-width {
-  width: 100%;
-  justify-content: space-between !important;
-}
-
-.btn-group--column {
-  flex-direction: column;
-}
-
-.btn--text-icon {
-  border: none !important;
-  background-color: transparent;
-  width: fit-content !important;
-  height: fit-content !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// Text icon button variant
+.btn--text-icon { @extend .btn; @extend .btn-text; }
